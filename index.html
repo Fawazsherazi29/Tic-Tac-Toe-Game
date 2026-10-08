@@ -8,26 +8,37 @@
 </head>
 <body>
     <div class="msg-container hide">
-        <p id="msg"> Winner </p>
-         <button id="new-btn" onclick="newGame()">New Game</button>
+        <p id="msg">Winner</p>
+        <button id="new-btn">New Game</button>
     </div>
+
     <main>
-    <h1>Tic Tac Toe</h1>
-    <div class="container">
-        <div class="game">
-       <button class="box"></button>
-       <button class="box"></button>
-       <button class="box"></button>
-       <button class="box"></button>
-       <button class="box"></button>
-       <button class="box"></button>
-       <button class="box"></button>
-       <button class="box"></button>
-       <button class="box"></button>
-    </div>
-    </div>
-    <button id="reset-btn" onclick="reset()">Reset Game</button>
-</main>
+        <h1>Tic Tac Toe</h1>
+
+        <div class="scoreboard">
+            <span>O: <b id="score-o">0</b></span>
+            <span id="turn-text">Turn: O</span>
+            <span>X: <b id="score-x">0</b></span>
+        </div>
+
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+
+        <button id="reset-btn">Reset Game</button>
+        <button id="reset-score-btn">Reset Score</button>
+    </main>
+
     <script src="app.js"></script>
 </body>
 </html>
